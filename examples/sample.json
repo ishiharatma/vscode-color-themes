@@ -1,0 +1,23 @@
+{
+  "name": "theme-preview",
+  "version": "1.0.0",
+  "private": true,
+  "description": "JSON sample for checking theme colors",
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "vitest run"
+  },
+  "settings": {
+    "retries": 3,
+    "timeout": 2.5,
+    "ratio": -0.25,
+    "enabled": true,
+    "fallback": null,
+    "pattern": "^[a-z]+\\d*$"
+  },
+  "tags": ["dark", "orange", "navy"],
+  "users": [
+    { "id": 1, "name": "Alice", "roles": ["admin"] },
+    { "id": 2, "name": "Bob", "roles": [] }
+  ]
+}

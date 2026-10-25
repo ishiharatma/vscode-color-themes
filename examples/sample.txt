@@ -1,0 +1,27 @@
+Plain Text Sample
+=================
+
+This file has no syntax highlighting. Use it to check the basic editor colors:
+the background, the foreground, line numbers, the cursor, selection,
+find matches, and the minimap.
+
+Things to try:
+  1. Select a few words to see the selection color.
+  2. Press Ctrl+F (Cmd+F on macOS) and search for "theme" to see find-match colors.
+  3. Double-click a word to see occurrence highlights in the overview ruler.
+  4. Scroll down to check the scrollbar and minimap slider.
+
+日本語の表示確認: いろはにほへと ちりぬるを わかよたれそ つねならむ
+全角英数字: ＡＢＣ　１２３　記号：「」『』【】・…
+Numbers and symbols: 0123456789 !@#$%^&*()_+-=[]{}|;':",./<>?
+Similar characters: 0O o l1I | `'" ,.
+
+The quick brown fox jumps over the lazy dog.
+THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+culpa qui officia deserunt mollit anim id est laborum.

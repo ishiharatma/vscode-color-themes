@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theme Preview</title>
+  <link rel="stylesheet" href="./sample.css">
+  <!-- Inline style and script blocks -->
+  <style>
+    body { margin: 0; font-family: system-ui, sans-serif; }
+  </style>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav aria-label="Main">
+      <a href="#features" class="nav-link active">Features</a>
+      <a href="https://example.com" target="_blank" rel="noopener">Docs</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="features" data-count="3">
+      <h1>Hello, <em>theme</em>!</h1>
+      <p>This paragraph has <strong>bold</strong> text and an &amp; entity.</p>
+      <ul>
+        <li>Item one</li>
+        <li class="disabled">Item two</li>
+      </ul>
+    </section>
+
+    <form action="/subscribe" method="post">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+      <button type="submit" disabled>Subscribe</button>
+    </form>
+  </main>
+
+  <script>
+    const button = document.querySelector("button[type=submit]");
+    document.getElementById("email").addEventListener("input", (event) => {
+      button.disabled = !event.target.validity.valid;
+    });
+  </script>
+</body>
+</html>

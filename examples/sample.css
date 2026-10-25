@@ -1,0 +1,49 @@
+/* CSS sample for checking theme colors. */
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+:root {
+  --color-primary: #ec7211;
+  --color-bg: rgb(22 25 31);
+  --spacing: 1.5rem;
+  --radius: 4px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--spacing) calc(var(--spacing) * 2);
+  background-color: var(--color-bg);
+  border-bottom: 1px solid hsl(210deg 28% 19%);
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--color-primary) !important;
+  text-decoration: underline;
+}
+
+#features > ul li:not(.disabled)::marker {
+  content: "▸ ";
+}
+
+input[type="email"]:focus-visible {
+  outline: 2px solid var(--color-primary);
+  border-radius: var(--radius);
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: none; }
+}

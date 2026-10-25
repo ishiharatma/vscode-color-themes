@@ -1,0 +1,41 @@
+# YAML sample for checking theme colors (CI pipeline style).
+version: 0.2
+
+env:
+  variables:
+    NODE_ENV: production
+    LOG_LEVEL: "info"
+    MAX_RETRIES: 3
+    TIMEOUT_SEC: 1.5
+    DRY_RUN: false
+    OPTIONAL_VALUE: ~
+
+defaults: &defaults
+  runtime: nodejs
+  version: "20"
+
+phases:
+  install:
+    <<: *defaults
+    commands:
+      - npm ci
+  build:
+    commands:
+      - npm run build
+      - npm test -- --coverage
+    on-failure: ABORT
+  post_build:
+    commands:
+      - echo "Build completed on $(date)"
+
+artifacts:
+  base-directory: dist
+  files:
+    - "**/*"
+
+description: |
+  Multi-line literal block.
+  Line breaks are preserved.
+summary: >
+  Folded block scalar
+  joined into one line.
