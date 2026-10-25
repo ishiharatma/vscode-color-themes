@@ -17,6 +17,7 @@ The [`examples/`](./examples/) directory has sample source code and text files f
 | Theme | Style | Description | Screenshot |
 | --- | --- | --- | --- |
 | [aws-theme](./themes/aws-theme/) | Dark | Inspired by the AWS Management Console. Navy UI with orange accents. | <img src="./themes/aws-theme/screenshot.png" alt="aws-theme" width="320"> |
+| [cockpit-hud](./themes/cockpit-hud/) | Dark | Inspired by an all-round monitor cockpit. Deep space background with cyan HUD lines and green/amber accents. | <img src="./themes/cockpit-hud/screenshot.png" alt="cockpit-hud" width="320"> |
 
 See the `README.md` in each theme directory for its color palette and usage.
 

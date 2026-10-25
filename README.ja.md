@@ -17,6 +17,7 @@
 | テーマ | 系統 | 説明 | スクリーンショット |
 | --- | --- | --- | --- |
 | [aws-theme](./themes/aws-theme/) | ダーク | AWS マネジメントコンソール風。ネイビーの UI にオレンジのアクセント。 | <img src="./themes/aws-theme/screenshot.png" alt="aws-theme" width="320"> |
+| [cockpit-hud](./themes/cockpit-hud/) | ダーク | 全天周モニターのコックピット風。宇宙のような深い紺の背景に、シアンの HUD ラインと緑・アンバーのアクセント。 | <img src="./themes/cockpit-hud/screenshot.png" alt="cockpit-hud" width="320"> |
 
 カラーパレットや詳しい使い方は、各テーマディレクトリの `README.md` を参照してください。
 
